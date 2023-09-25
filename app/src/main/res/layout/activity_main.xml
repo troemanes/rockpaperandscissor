@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/enemy"
+        android:layout_width="190dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="5dp"
+        android:gravity="center"
+        android:shadowColor="#FF3131"
+        android:text="Rakibin Puanı: 0"
+        android:textColor="#F14C4C"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/tas"
+        android:layout_width="120dp"
+        android:layout_height="80dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginBottom="250dp"
+        android:text="\u270A    TAŞ "
+        android:textColor="#CAC7C7"
+        android:textColorHighlight="#3F51B5"
+        android:textColorHint="#FFFFFF"
+        android:textColorLink="#BF7B7B"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/kagit"
+        app:layout_constraintHorizontal_chainStyle="packed"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/kagit"
+        android:layout_width="120dp"
+        android:layout_height="80dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="250dp"
+        android:text="\u270B Kağıt"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/makas"
+        app:layout_constraintHorizontal_bias="0.51"
+        app:layout_constraintStart_toEndOf="@+id/tas" />
+
+    <Button
+        android:id="@+id/makas"
+        android:layout_width="120dp"
+        android:layout_height="80dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="250dp"
+        android:text="\u270C Makas"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/kagit" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="106dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="124dp"
+        android:layout_marginEnd="10dp"
+        android:background="#F4F4F4"
+        android:gravity="center"
+        android:text="Sonuç"
+        android:textSize="24sp"
+        android:textStyle="bold|italic"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/score"
+        android:layout_width="190dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="30dp"
+        android:gravity="center"
+        android:text="Senin Puanın: 0"
+        android:textColor="#2196F3"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
